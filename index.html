@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - SDL-Phlebotomist App</title>
+  <style>
+    :root {
+      --bg: #f6f8fc;
+      --surface: #ffffff;
+      --text: #101828;
+      --muted: #475467;
+      --border: rgba(16, 24, 40, 0.12);
+      --brand: #0b3d91;
+      --brand-2: #0ea5e9;
+      --shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+      --radius: 16px;
+    }
+
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+        "Segoe UI Emoji";
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(1200px 600px at 15% 0%, rgba(14, 165, 233, 0.16), transparent 55%),
+        radial-gradient(900px 500px at 95% 15%, rgba(11, 61, 145, 0.14), transparent 60%),
+        var(--bg);
+      color: var(--text);
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      box-shadow: 0 10px 24px rgba(11, 61, 145, 0.25);
+      flex: 0 0 auto;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .brand-title {
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      line-height: 1.15;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-subtitle {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.2;
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.7);
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 1;
+      transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+      white-space: nowrap;
+    }
+
+    .chip:hover {
+      transform: translateY(-1px);
+      border-color: rgba(11, 61, 145, 0.30);
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--text);
+    }
+
+    .chip.primary {
+      border-color: rgba(11, 61, 145, 0.35);
+      background: linear-gradient(135deg, rgba(11, 61, 145, 0.10), rgba(14, 165, 233, 0.10));
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 24px auto 28px;
+      background: var(--surface);
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(16, 24, 40, 0.06);
+    }
+
+    #policy {
+      scroll-margin-top: 90px;
+    }
+
+    h1 {
+      color: var(--brand);
+      text-align: left;
+      margin: 0 0 8px;
+      letter-spacing: -0.03em;
+    }
+
+    .effective-date {
+      text-align: left;
+      margin-bottom: 26px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    h2 {
+      color: var(--brand);
+      margin-top: 30px;
+      border-bottom: 1px solid rgba(16, 24, 40, 0.10);
+      padding-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin: 12px 0;
+    }
+
+    ul {
+      margin: 10px 0 10px 25px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .contact a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .site-footer {
+      max-width: 980px;
+      margin: 0 auto 40px;
+      padding: 0 20px;
+      color: var(--muted);
+    }
+
+    .footer-card {
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: var(--radius);
+      padding: 18px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      backdrop-filter: blur(10px);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(71, 84, 103, 0.35);
+    }
+
+    .footer-links a:hover {
+      color: var(--text);
+      border-bottom-color: rgba(16, 24, 40, 0.55);
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        padding: 12px 14px;
+      }
+
+      .brand-subtitle {
+        display: none;
+      }
+
+      .container {
+        margin: 16px 14px 18px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .site-footer {
+        margin-bottom: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="brand" aria-label="SDL-Phlebotomist">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <div class="brand-title">SDL-Phlebotomist</div>
+          <div class="brand-subtitle">Privacy Policy</div>
+        </div>
+      </div>
+      <nav class="header-actions" aria-label="Quick actions">
+        <a class="chip primary" href="#policy">View policy</a>
+        <a class="chip" href="mailto:support@sdl.com">support@sdl.com</a>
+        <a class="chip" href="tel:9884273060">+91 9884273060</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <a id="policy"></a>
+    <h1>Privacy Policy – SDL-Phlebotomist App</h1>
+    <p class="effective-date"><strong>Effective Date:</strong> [Add Date]</p>
+
+    <p>
+      SDL-Phlebotomist ("we", "our", "us") operates the SDL-Phlebotomist mobile application,
+      used by authorized staff for sample collection and service management.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We may collect the following types of data:</p>
+    <ul>
+      <li><strong>Personal Information (Staff):</strong> Name, phone number, employee ID, login credentials</li>
+      <li><strong>Patient Information:</strong> Name, address, contact details, test booking details</li>
+      <li><strong>Health Information:</strong> Medical test details, sample collection status, reports (if applicable)</li>
+      <li><strong>Location Data:</strong> Real-time location of the phlebotomist for service tracking and navigation</li>
+      <li><strong>Device Information:</strong> Device model, OS version, app usage data</li>
+    </ul>
+
+    <h2>2. How We Use the Information</h2>
+    <p>We use the collected data to:</p>
+    <ul>
+      <li>Assign and manage sample collection tasks</li>
+      <li>Track phlebotomist location for home collection services</li>
+      <li>Process and update test booking status</li>
+      <li>Improve operational efficiency</li>
+      <li>Communicate with staff and patients</li>
+    </ul>
+
+    <h2>3. Health Data Usage</h2>
+    <p>Health-related data is used strictly for:</p>
+    <ul>
+      <li>Sample collection and medical testing purposes</li>
+      <li>Updating test status and reports</li>
+      <li>Internal healthcare service operations</li>
+    </ul>
+    <p><strong>We do not sell or misuse health data.</strong></p>
+
+    <h2>4. Data Sharing</h2>
+    <p>We may share data with:</p>
+    <ul>
+      <li>Authorized backend servers</li>
+      <li>Laboratory partners for testing</li>
+      <li>Payment gateways (if applicable)</li>
+    </ul>
+    <p><strong>We do not sell personal or health data to third parties.</strong></p>
+
+    <h2>5. Location Data Usage</h2>
+    <p>Location data is collected only when the app is in use to:</p>
+    <ul>
+      <li>Track staff movement for assigned tasks</li>
+      <li>Provide navigation for home collection</li>
+    </ul>
+    <p>Users can control location permissions through device settings.</p>
+
+    <h2>6. Data Security</h2>
+    <p>
+      We implement industry-standard security measures to protect data from unauthorized access,
+      misuse, or disclosure.
+    </p>
+
+    <h2>7. User Rights</h2>
+    <p>Users can:</p>
+    <ul>
+      <li>Request correction or deletion of data</li>
+      <li>Contact admin for privacy concerns</li>
+    </ul>
+
+    <h2>8. Access Control</h2>
+    <p>
+      This app is restricted to <strong>authorized staff only</strong>. Unauthorized access is prohibited.
+    </p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Updates will be reflected with a new effective date.
+    </p>
+
+    <h2>10. Contact Us</h2>
+    <div class="contact">
+      <p>If you have any questions:</p>
+      <p>Email: <a href="mailto:support@sdl.com">support@sdl.com</a></p>
+      <p>Phone: <a href="tel:9884273060">9884273060</a></p>
+    </div>
+  </div>
+  <footer class="site-footer" role="contentinfo" aria-label="Footer">
+    <div class="footer-card">
+      <div>
+        <strong style="color: var(--text);">SDL-Phlebotomist</strong>
+        <span> · </span>
+        <span>Privacy Policy</span>
+      </div>
+      <div class="footer-links">
+        <a href="#policy">Back to top</a>
+        <a href="mailto:support@sdl.com">Contact support</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
